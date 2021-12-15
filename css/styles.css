@@ -60,7 +60,7 @@ body.dark{
     
 }
 .toggle-theme__text{
-    font-size: 0.7rem;
+    font-size: 0.5rem;
     color: var(--primary-color);
 }
 .flags{
@@ -151,17 +151,17 @@ body.dark{
 }
 .card__title{
     margin: 0;
-    font-size: 1.2rem;
+    font-size: 1.0rem;
 }
 .card__subtitle{
-    font-size: 0.9rem;
+    font-size: 0.7rem;
     opacity: 0.5;
 }
 .card__link{
     margin-bottom: 0.5em;
 }
 .card__text{
-    font-size: .9rem;
+    font-size: .7rem;
     line-height: 1.6;
 }
 .skills{
@@ -175,7 +175,7 @@ body.dark{
 }
 .skills__tech{
     margin: 0;
-    font-size: .8em;
+    font-size: .6em;
 }
 .skills__item{
     display: flex;
@@ -224,7 +224,7 @@ body.dark{
     margin-right: 1em;
 }
 .experience__time{
-    font-size: 0.8rem;
+    font-size: 0.6rem;
     margin-bottom: .5em;
 }
 .experience__job{

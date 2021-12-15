@@ -5,7 +5,7 @@
     --bg-color: hsl(0, 0%, 90%);
     --bg-card-color: hsl(0, 0%, 98%);
     --border-radius: 0.4em;
-    --transition: color 0.2s, background-color 0.3s ease-in-out;
+    --transition: color 0.2s, background-color 3s cubic-bezier(0.075, 0.82, 0.165, 1);
     --skills-bar-length: 0%;
 }
 
@@ -271,6 +271,7 @@ body.dark{
  }   
 }
 .project__tag{
+    transition: var(--transition);
     background-color: var(--primary-color);
     padding: 0.4em 0.8em;
     margin: 0.5rem;

@@ -1,0 +1,11 @@
+{
+    "profile": {
+      "rol": "Desarrollador chingon",
+      "description": "Recien egresado de Ingeniería en Sistemas Computacionales, con un gran interes en el desarrollo web. Con capacidad para aprendery aplicar mis conocimientos al ámbito profesional. En busca de una oportunidad laboral en la que desarrollar mis habilidades y adquirir experiencia."
+    }, 
+  "experiencia": {
+      "first-job-title": "Desarrollador Front-End",
+      "first-job-dates": "Octubre 2020 - Febrero 2021",
+      "first-job-description":" Recien 123"
+    }
+  }

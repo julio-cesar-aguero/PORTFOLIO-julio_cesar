@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
     <link rel="stylesheet" href="css/styles.css" />
     <title>Portfolio</title>
   </head>
@@ -15,6 +19,14 @@
           <p id="toggle-text" class="toggle-theme__text">Dark Mode</p>
         </div>
       </div>
+      <div id="flags" class="flags">
+        <div class="flags__item" data-languaje="mx">
+          <img src="assets/icons/mx.svg" alt="mx" class="flags__img">
+        </div>
+        <div class="flags__item" data-languaje="us">
+          <img src="assets/icons/us.svg" alt="us" class="flags__img">
+        </div>
+      </div>
       <div data-color="hsl(214, 84%, 56%)" id="toggle-colors" class="colors">
           <div data-color="hsl(214, 84%, 56%)" class="colors__item colors__item--blue"></div>
           <div data-color="hsl(150, 84%, 56%)" class="colors__item colors__item--green"></div>
@@ -23,7 +35,103 @@
       </div>
       
     </header>
-    <h1 class="title">Hola Mundo</h1>
+    <main class="main">
+      <section class="column column--left">
+        <!-- TARJETA DE PERFIL-->
+        <article class="card card--profile">
+          <div class="card__image-container">
+            <img src="assets/images/profile.jp" alt="image-profile">
+          </div>
+          <div class="card__header">
+            <h2 class="card__title">JULIO CESAR AGÜERO GOMEZ</h2>
+            <p class="card__subtitle" data-section="profile" data-value="rol">Developer JR.</p>
+          </div>
+          <div class="card__body">
+            <div class="card__link">
+              <i class="fas fa-envelope icon"> </i>
+              <a href="mailto:julio.aguero.gomez@gmail.com">
+                julio.aguero.gomez@gmail.com
+              </a>
+            </div>
+            <div class="card__link">
+              <i class="fas fa-phone-alt icon"> </i>
+              <a href="tel:7121411600">
+                +52 7121411600
+              </a>
+            </div>
+            <p class="card__text" data-section="profile" data-value="description">
+              Recien egresado de Ingeniería en Sistemas Computacionales, con un
+              gran interes en el desarrollo web. Con capacidad para aprendery 
+              aplicar mis conocimientos al ámbito profesional. En busca de una 
+              oportunidad laboral en la que desarrollar mis habilidades y adquirir
+              experiencia.
+            </p>
+          </div>
+        </article>
+        <article class="card card--experience">
+          <h2 class="card__title">Experience</h2>
+          <div class="experience">
+            <img src="assets/images/logo.png" alt="logo" class="experience__image">
+            <div class="experience__info">
+              <p class="experience__time">
+                Agosto 2020 - Febrero 2021
+              </p>
+              <h3 class="experience__job">Front End Developer</h3>
+              <p class="experience__description">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum illo explicabo, neque laboriosam suscipit est harum illum quibusdam eius nulla dolorum nihil quos mollitia consequatur cumque, asperiores quidem. Odit, ex.
+              </p>
+            </div>
+          </div>
+
+        </article>
+      </section>
+      <section class="column column--right">
+        <article class="card">
+        <h2 class="card__title">Front end</h2>
+        <small>Años de experiencia</small>
+        <div class="skills__header">
+          <span class="skills__start-level">0</span>
+          <span class="skills__start-level">5</span>
+        </div>
+        <div class="skills">
+          <div class="skills__item">
+            <p class="skills__tech">HTML</p>
+            <div class="skills__bar skills__bar--80"></div>
+          </div>
+          <div class="skills__item">
+            <p class="skills__tech">CSS</p>
+            <div class="skills__bar skills__bar--90"></div>
+          </div>
+          <div class="skills__item">
+            <p class="skills__tech">JAVASCRIPT</p>
+            <div class="skills__bar skills__bar--70"></div>
+          </div>
+        </div>
+      </article>
+      <article class="card">
+        <h2 class="card__title">Database</h2>
+        <div class="skills">
+          <div class="skills__item">
+            <p class="skills__tech">MySQL</p>
+            <div class="skills__bar skills__bar--80"></div>
+          </div>
+          <div class="skills__item">
+            <p class="skills__tech">ORACLE</p>
+            <div class="skills__bar skills__bar--90"></div>
+          </div>
+        </div>
+      </article>
+      <article class="card">
+        <h2 class="card__title">Mobile App Dev</h2>
+        <div class="skills">
+          <div class="skills__item">
+            <p class="skills__tech">Android</p>
+            <div class="skills__bar skills__bar--80"></div>
+          </div>
+        </div>
+      </article>
+      </section>  
+    </main>
     <script src="js/scripts.js"></script>
   </body>
 </html>

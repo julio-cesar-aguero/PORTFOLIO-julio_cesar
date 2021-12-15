@@ -116,6 +116,7 @@ body.dark{
 .main{
     display: grid;
     padding: 1.5em;
+
 }
 @media screen and (min-width:720px) {
     .main{

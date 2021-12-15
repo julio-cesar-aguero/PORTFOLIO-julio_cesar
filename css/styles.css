@@ -60,18 +60,19 @@ body.dark{
     
 }
 .toggle-theme__text{
-    font-size: 0.5rem;
+    margin-left: 5px;
+    font-size: 0.5em;
     color: var(--primary-color);
 }
 .flags{
  
-    width: 70px;
+    width: 80px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 .flags__item{
-    margin: 0.2em;
+    margin: 0.3em;
     width: 80px;
 }
 .flags__img{
@@ -115,23 +116,23 @@ body.dark{
 }
 .main{
     display: grid;
-    padding: 1.5em;
+    margin: 0.5em;
 
 }
-@media screen and (min-width:720px) {
+@media screen and (min-width:760px) {
     .main{
         grid-template-columns: min-content 1fr;
     }
+
 }
 .column{
     display: grid;
     gap: 0.5em;
-    margin-left: 0.5em;
+    margin-right: 0.5em;
 }
 
-@media screen and (min-width:720px) {
+@media screen and (min-width:760px) {
     .column--right{
-        
         grid-template-columns: repeat(3,1fr);
         grid-template-rows: repeat(3,min-content);
     }
@@ -142,12 +143,12 @@ body.dark{
     border-radius: var(--border-radius);
 }
 .card__image-container{
-    min-width: 320px;
+    min-width: 270px;
     border-radius: var(--border-radius);
     overflow: hidden;
 }
 .card__header{
-    padding: 1em 0;
+    padding: 1em;
 }
 .card__title{
     margin: 0;
@@ -161,11 +162,22 @@ body.dark{
     margin-bottom: 0.5em;
 }
 .card__text{
-    font-size: .7rem;
+    font-size: 0.7rem;
     line-height: 1.6;
 }
+@media screen and (min-width: 760px) {
+    
+
+.card--project{
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    grid-column: 1 / -1;
+    
+    
+}
+}
 .skills{
-    padding: 1em 0;
+    padding: 1em;
 }
 .skills__header{
     display: flex;
@@ -232,6 +244,64 @@ body.dark{
     margin-bottom: 0.5em;
     color: var(--primary-color);
     transition: var(--transition);
+}
+
+
+@media screen and (min-width: 760px) {
+    .project{
+        margin-left: 2em;
+        
+    }
+    
+    
+    
+}
+.project__tags{
+    display: flex;
+    justify-content: space-between;
+    margin: 0.5em 0;
+    font-size: 0.6rem;
+    width: 275px;
+
+}
+@media screen and (min-width: 760px){
+ .project__tags{
+    width: 325px;
+    font-size: 0.9em;
+ }   
+}
+.project__tag{
+    background-color: var(--primary-color);
+    padding: 0.4em 0.8em;
+    margin: 0.5rem;
+    border-radius: var(--border-radius);
+    color: var(--bg-color);
+}
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    width: 225px;
+    
+    padding: 0.5em;
+}
+.button{
+    width: 100px;
+    line-height: 2.5;
+    text-align: center;
+    color: var(--bg-color);
+    font-weight: 300;
+    padding: 0.4em 1.8em;
+    border-radius: var(--border-radius);
+    transition: var(--transition);
+}
+.button--primary{
+    background-color: var(--primary-color);
+}
+.button--ghost{
+    background-color: transparent;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    
 }
 .icon{
     margin-right: .5em;

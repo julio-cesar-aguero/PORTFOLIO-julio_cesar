@@ -2,8 +2,8 @@
 :root{
     --primary-color: hsl(214, 84%, 56%);
     --text-color: hsl(0, 0%, 31%);
-    --bg-color: hsl(0, 0%, 90%);
-    --bg-card-color: hsl(0, 0%, 98%);
+    --bg-color: hsl(3, 1%, 90%);
+    --bg-card-color: hsl(3, 1%, 98%);
     --border-radius: 0.4em;
     --transition: color 0.2s, background-color 3s cubic-bezier(0.075, 0.82, 0.165, 1);
     --skills-bar-length: 0%;
@@ -40,6 +40,9 @@ body.dark{
     padding: 1em;
     background-color: var(--bg-card-color);
     transition: var(--transition);
+    position: fixed;
+    z-index: 10;
+    width: 100vw;
 }
 .switches{
     display: flex;
@@ -115,8 +118,10 @@ body.dark{
     transition: var(--transition);
 }
 .main{
+    position: absolute;
     display: grid;
     margin: 0.5em;
+    top: 100px
 
 }
 @media screen and (min-width:760px) {
@@ -143,7 +148,7 @@ body.dark{
     border-radius: var(--border-radius);
 }
 .card__image-container{
-    min-width: 270px;
+    min-width: 280px;
     border-radius: var(--border-radius);
     overflow: hidden;
 }
@@ -162,7 +167,7 @@ body.dark{
     margin-bottom: 0.5em;
 }
 .card__text{
-    font-size: 0.9rem;
+    font-size: 0.7rem;
     line-height: 1.6;
 }
 @media screen and (min-width: 760px) {
@@ -234,7 +239,7 @@ body.dark{
 
 }
 .experience__image{
-    max-width: 15%;
+    max-width: 10%;
     margin-right: 1em;
 }
 .experience__time{
@@ -247,11 +252,19 @@ body.dark{
     color: var(--primary-color);
     transition: var(--transition);
 }
+experience__description{
+    font-size: 0.8rem;
+    margin-bottom: 1.5em;
+}
 
+.project{
+    position: relative;
+    min-height: 260px;
+}
 
 @media screen and (min-width: 760px) {
     .project{
-        margin-left: 2em;
+        margin-left: 0.5em;
         
     }
     
@@ -261,39 +274,44 @@ body.dark{
 .project__tags{
     display: flex;
     justify-content: space-between;
-    margin: 0.5em 0;
-    font-size: 0.6rem;
-    width: 275px;
+    margin: 0.2em 0;
+    width: 105px;
 
 }
-@media screen and (min-width: 760px){
+@media screen and (max-width: 760px){
  .project__tags{
-    width: 325px;
-    font-size: 0.9em;
+    font-size: 0.8em;
+    font-weight: 400;
  }   
 }
 .project__tag{
     transition: var(--transition);
     background-color: var(--primary-color);
-    padding: 0.4em 0.8em;
-    margin: 0.5rem;
+    padding: 0.3em 0.6em;
+    margin: 0.6rem;
     border-radius: var(--border-radius);
     color: var(--bg-color);
 }
 .buttons{
     display: flex;
     justify-content: space-between;
-    width: 225px;
+    width: 155px;
     
     padding: 0.5em;
 }
+@media screen and (min-width: 760px){
+    .buttons{
+        position: absolute;
+    }
+}
 .button{
-    width: 100px;
-    line-height: 2.5;
+    width: 220px;
+    line-height: 1.5;
     text-align: center;
     color: var(--bg-color);
-    font-weight: 300;
-    padding: 0.4em 1.8em;
+    font-weight: 400;
+    padding: 0.4em 0.7em;
+    margin-left: 0.5em;
     border-radius: var(--border-radius);
     transition: var(--transition);
 }

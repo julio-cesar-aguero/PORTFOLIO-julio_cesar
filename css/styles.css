@@ -1,11 +1,11 @@
 
 :root{
-    --primary-color: hsl(214, 84%, 56%);
+    --primary-color: hsl(214, 84%, 57%);
     --text-color: hsl(0, 0%, 31%);
     --bg-color: hsl(3, 1%, 90%);
     --bg-card-color: hsl(3, 1%, 98%);
     --border-radius: 0.4em;
-    --transition: color 0.2s, background-color 3s cubic-bezier(0.075, 0.82, 0.165, 1);
+    --transition: color 0.3s, background-color 5s cubic-bezier(0.075, 0.82, 0.165, 1);
     --skills-bar-length: 0%;
 }
 
@@ -149,8 +149,11 @@ body.dark{
 }
 .card__image-container{
     min-width: 280px;
-    border-radius: var(--border-radius);
     overflow: hidden;
+    margin: 1.8em 0.8em;
+}
+.card__image-container img{
+    border-radius: var(--border-radius);
 }
 .card__header{
     padding: 1em;
@@ -259,7 +262,7 @@ experience__description{
 
 .project{
     position: relative;
-    min-height: 260px;
+    min-height: 270px;
 }
 
 @media screen and (min-width: 760px) {
